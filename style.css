@@ -1973,3 +1973,25 @@ h1 {
     .candle { font-size: 2.5rem; top: -30px; left: 15px; }
     .fooo { font-size: 1.5rem; left: 50px; top: 10px; }
 }
+
+/* --- Fix Envelope Text Overflow and Readability --- */
+.letter {
+    height: auto !important;
+    min-height: 90%;
+    padding: 20px !important;
+    background: #fff !important;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1) !important;
+}
+.bangla-text {
+    color: #000 !important;
+    font-weight: 800 !important;
+    font-size: 1rem !important;
+    text-shadow: 0px 0px 3px rgba(255,255,255,1) !important;
+}
+
+@media (max-width: 768px) {
+    .envelope { width: 320px !important; height: 220px !important; }
+    .envelope .flap { border-left: 160px solid transparent !important; border-right: 160px solid transparent !important; border-top: 130px solid #be2edd !important; }
+    .envelope.open .letter { transform: translateY(-140px) !important; }
+    .bangla-text { font-size: 0.95rem !important; line-height: 1.5 !important; }
+}
