@@ -2003,3 +2003,46 @@ h1 {
     75% { transform: scale(1.15) rotate(-1deg); opacity: 0.95; }
 }
 .candle { animation: flicker 0.3s infinite alternate; transform-origin: bottom center; display: inline-block; }
+
+/* --- Make Letter Full Screen When Opened --- */
+.envelope.open {
+    transform: none !important; /* Prevent envelope transform from messing with fixed positioning */
+}
+.envelope.open .letter {
+    position: fixed !important;
+    top: 5vh !important;
+    left: 5vw !important;
+    bottom: auto !important;
+    width: 90vw !important;
+    height: 90vh !important;
+    max-height: 90vh !important;
+    transform: none !important;
+    z-index: 9999 !important;
+    overflow-y: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 15px !important;
+}
+
+/* Adjust button inside the letter so it doesn't overlap text */
+.envelope.open .letter .next-btn {
+    margin-top: 30px !important;
+    position: static !important;
+}
+
+@media (max-width: 768px) {
+    .envelope.open .letter {
+        top: 2vh !important;
+        left: 2vw !important;
+        width: 96vw !important;
+        height: 96vh !important;
+        max-height: 96vh !important;
+        padding: 20px 10px !important;
+    }
+    .bangla-text {
+        font-size: 1.1rem !important; /* Increase font size since card is huge now */
+        line-height: 1.6 !important;
+    }
+}
