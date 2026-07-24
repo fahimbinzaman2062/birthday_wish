@@ -1943,7 +1943,7 @@ h1 {
 
     /* Section 2 (Birthday Gift) Scale Down */
     #section2 { display: flex !important; justify-content: center; align-items: center; }
-    #wrapper { transform: scale(0.45); transform-origin: center center; }
+    #wrapper { width: 100%; height: 100%; transform: none; }
 
     /* Section 3 (Flowers) */
     .floating-text { font-size: 2.2rem; top: 15%; width: 90%; text-align: center; white-space: normal; }
