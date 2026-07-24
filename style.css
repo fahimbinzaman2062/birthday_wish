@@ -1995,3 +1995,11 @@ h1 {
     .envelope.open .letter { transform: translateY(-140px) !important; }
     .bangla-text { font-size: 0.95rem !important; line-height: 1.5 !important; }
 }
+
+@keyframes flicker {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    25% { transform: scale(1.1) rotate(-3deg); opacity: 0.9; }
+    50% { transform: scale(0.9) rotate(3deg); opacity: 0.8; }
+    75% { transform: scale(1.15) rotate(-1deg); opacity: 0.95; }
+}
+.candle { animation: flicker 0.3s infinite alternate; transform-origin: bottom center; display: inline-block; }

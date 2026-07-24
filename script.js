@@ -58,6 +58,15 @@ function blowCandle() {
     // Blow out candle after a short delay
     setTimeout(() => {
         document.getElementById('candle').classList.add('blown');
+    document.getElementById('candle').style.animation = 'none'; // Stop flickering
+    
+    // Show the sweet message
+    setTimeout(() => {
+        document.getElementById('panda-instruction').style.display = 'none';
+        const msg = document.getElementById('sweet-message');
+        msg.style.display = 'block';
+        msg.style.animation = 'pulse 1.5s infinite';
+    }, 1000);
         document.getElementById('panda-instruction').innerText = "Happy Birthday! 💋";
         
         // Shower of kisses
