@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
 body { overflow: hidden; background: #000; color: #fff; }
@@ -95,9 +99,11 @@ section.active {
 .kiss { position: absolute; font-size: 3rem; animation: floatUp 2s forwards ease-out; }
 @keyframes floatUp { 0% { opacity: 1; transform: translateY(0) scale(0.5); } 100% { opacity: 0; transform: translateY(-300px) scale(1.5); } }
 
-\n/* --- CSS 1 --- */\n@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* --- CSS 1 --- */
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -941,7 +947,9 @@ h1 {
 
     
 
-}\n/* --- CSS 2 --- */\n*,
+}
+/* --- CSS 2 --- */
+*,
 *::after,
 *::before {
   padding: 0;
