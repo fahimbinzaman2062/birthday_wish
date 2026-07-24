@@ -1935,3 +1935,41 @@ h1 {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+/* --- Mobile Responsiveness Enhancements --- */
+@media (max-width: 768px) {
+    /* Section 1 */
+    .apology-container h1 { font-size: 1.8rem; padding: 10px; }
+    .next-btn { padding: 10px 20px; font-size: 1rem; }
+
+    /* Section 2 (Birthday Gift) Scale Down */
+    #section2 { display: flex !important; justify-content: center; align-items: center; }
+    #wrapper { transform: scale(0.45); transform-origin: center center; }
+
+    /* Section 3 (Flowers) */
+    .floating-text { font-size: 2.2rem; top: 15%; width: 90%; text-align: center; white-space: normal; }
+
+    /* Section 4 (Proposal) */
+    .proposal-container h1 { font-size: 2.5rem; margin-bottom: 30px; }
+    .proposal-buttons { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px; height: auto; }
+    .yes-btn, .no-btn { position: relative; left: auto; right: auto; width: 80%; }
+    /* Revert "no" button absolute positioning when it hasn't dodged yet, 
+       but since script sets it to absolute on hover, we leave the base relative so it stacks neatly */
+
+    /* Section 5 (Date) */
+    .date-container h1 { font-size: 2rem; }
+    .date-container p { font-size: 1.2rem; }
+    .date-form input { width: 90%; }
+
+    /* Section 6, 7, 8 (Wish Cards) */
+    .envelope { width: 300px; height: 200px; }
+    .envelope .flap { border-left: 150px solid transparent; border-right: 150px solid transparent; border-top: 120px solid #be2edd; }
+    .envelope.open .letter { transform: translateY(-120px); padding: 15px; }
+    .bangla-text { font-size: 0.9rem; line-height: 1.4; }
+    .click-instruction { font-size: 1.2rem; }
+
+    /* Section 9 (Panda) */
+    #section9 h1 { font-size: 2.5rem; text-align: center; padding: 0 10px; }
+    .panda-scene { font-size: 5rem; gap: 15px; }
+    .candle { font-size: 2.5rem; top: -30px; left: 15px; }
+    .fooo { font-size: 1.5rem; left: 50px; top: 10px; }
+}
